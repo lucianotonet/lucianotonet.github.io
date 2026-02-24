@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>groq-php • Documentação básica</title>
+    <meta name="description" content="Documentação básica do projeto lucianotonet/groq-php." />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="site nav-inner">
+        <strong class="brand">groq-php</strong>
+        <nav class="nav-links" aria-label="Navegação da documentação">
+          <a class="pill" href="../index.html">Home</a>
+          <a class="pill" href="https://github.com/lucianotonet/groq-php" target="_blank" rel="noopener noreferrer">Repositório</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site">
+      <section class="hero">
+        <article class="hero-card" data-animate="1">
+          <span class="kicker">documentação básica</span>
+          <h1>lucianotonet/groq-php</h1>
+          <p class="lead">Biblioteca para integrar a API da Groq em PHP com uma superfície de uso simples e direta.</p>
+          <div class="chips">
+            <span class="chip">Composer</span>
+            <span class="chip">PHP 8+</span>
+            <span class="chip">LLM</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="grid">
+          <article class="card" data-animate="2">
+            <h3>1) Instalação</h3>
+            <pre><code>composer require lucianotonet/groq-php</code></pre>
+          </article>
+
+          <article class="card" data-animate="2">
+            <h3>2) Variável de ambiente</h3>
+            <pre><code>GROQ_API_KEY=seu_token_aqui</code></pre>
+          </article>
+
+          <article class="card" data-animate="3">
+            <h3>3) Exemplo rápido</h3>
+            <pre><code>&lt;?php
+use LucianoTonet\GroqPHP\Groq;
+
+$groq = new Groq(getenv('GROQ_API_KEY'));
+$response = $groq-&gt;chat()-&gt;create([
+  'model' =&gt; 'llama-3.1-8b-instant',
+  'messages' =&gt; [
+    ['role' =&gt; 'user', 'content' =&gt; 'Explique resumidamente este projeto.']
+  ]
+]);</code></pre>
+          </article>
+
+          <article class="card" data-animate="3">
+            <h3>4) Boas práticas</h3>
+            <p>Armazene a chave em ambiente seguro, trate limite de requisição e registre respostas para observabilidade.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Documentação consistente com a home</span>
+        <button class="button toggle" type="button" data-theme-toggle>Alternar claro/escuro</button>
+      </footer>
+    </main>
+
+    <script src="../assets/theme.js"></script>
+  </body>
+</html>

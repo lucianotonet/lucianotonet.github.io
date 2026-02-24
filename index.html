@@ -1,9 +1,80 @@
 <!DOCTYPE html>
-<html>
-<body>
-  <h1>Olá 👋🏼</h1>
-  <p>Me chamo Luciano Tonet, sou programador com raízes profundas em PHP, Vue.js e JavaScript e explorando outras linguagens como Python, Flutter, etc. 
-    <br>
-    Atualmente estudando muito Inteligência Artificial e fazendo algumas implementações bem interessantes...</p>
-</body>
+<html lang="pt-BR" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luciano Tonet • Engenharia de Software</title>
+    <meta name="description" content="Website pessoal de Luciano Tonet com foco nos projetos groq-php e laravel-telescope-mcp." />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="site nav-inner">
+        <strong class="brand">Luciano Tonet</strong>
+        <nav class="nav-links" aria-label="Navegação principal">
+          <a class="pill" href="#projetos">Projetos</a>
+          <a class="pill" href="https://github.com/Lucianotonet" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site">
+      <section class="hero" aria-label="Introdução">
+        <article class="hero-card" data-animate="1">
+          <span class="kicker">minimalismo de alto contraste</span>
+          <div class="profile">
+            <img class="avatar" src="https://github.com/Lucianotonet.png" alt="Foto de perfil de Luciano Tonet" />
+            <div>
+              <h1>Construindo software elegante, pragmático e escalável.</h1>
+              <p class="lead">
+                Sou Luciano Tonet. Trabalho com PHP, Laravel, Vue.js e JavaScript, com foco em produtos claros,
+                arquiteturas enxutas e experiência de uso consistente. Esta página resume meus projetos principais.
+              </p>
+            </div>
+          </div>
+          <div class="chips" aria-label="Stack principal">
+            <span class="chip">PHP</span>
+            <span class="chip">Laravel</span>
+            <span class="chip">Vue.js</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">IA aplicada</span>
+          </div>
+        </article>
+      </section>
+
+      <section id="projetos" class="section" aria-label="Projetos principais">
+        <div class="section-head" data-animate="2">
+          <h2>Projetos em destaque</h2>
+          <p class="lead">Documentação rápida e objetiva para adoção imediata.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card" data-animate="2">
+            <div class="iconline">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+              <h3>lucianotonet/groq-php</h3>
+            </div>
+            <p>SDK em PHP para consumo da API da Groq, pensado para integração fluida em aplicações Laravel e serviços backend.</p>
+            <a class="button" href="projects/groq-php.html">Abrir documentação</a>
+          </article>
+
+          <article class="card" data-animate="3">
+            <div class="iconline">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8M12 8v8"/></svg>
+              <h3>lucianotonet/laravel-telescope-mcp</h3>
+            </div>
+            <p>Ponte entre Laravel Telescope e MCP para inspeção avançada de telemetria, logs e eventos com contexto operacional.</p>
+            <a class="button" href="projects/laravel-telescope-mcp.html">Abrir documentação</a>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© Luciano Tonet</span>
+        <button class="button toggle" type="button" data-theme-toggle>Alternar claro/escuro</button>
+      </footer>
+    </main>
+
+    <script src="assets/theme.js"></script>
+  </body>
 </html>
